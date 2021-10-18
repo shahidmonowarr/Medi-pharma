@@ -1,0 +1,44 @@
+[
+    {
+        "_id": "616d35c9ed4897e7459c6c28",
+        "index": 0,
+        "picture": "https://i.ibb.co/9hpDLTB/generic-medicine.jpg",
+        "name": "Generic Medicine",
+        "description": "Generic drug is a medication created to be the same as an existing approved brand-name drug in dosage form"
+    },
+    {
+        "_id": "616d35c903a60db24814f205",
+        "index": 1,
+        "picture": "https://i.ibb.co/WkRz4Z6/health-check.jpg",
+        "name": "Health check and screening",
+        "description": "Various Essential and Affordable Health Screening Packages cater to Individual Needs. Reliable Health Screening with Caring is available"
+    },
+    {
+        "_id": "616d35c9687d0a1a70cc402f",
+        "index": 2,
+        "picture": "https://i.ibb.co/n1M2sBd/vaccination.jpg",
+        "name": "Vaccination",
+        "description": "Vaccination is a simple, safe, and effective way of protecting people against harmful diseases, before they come into contact with us."
+    },
+    {
+        "_id": "616d35c974cd5f841ba3a25c",
+        "index": 3,
+        "picture": "https://i.ibb.co/4SGp3kV/consultation.jpg",
+        "name": "Medicine Consultation",
+        "description": "The medical consultation is best understood. In a typical consultation the doctor elicits information from the patient, then offers a diagnosis may also discuss and offer treatment."
+    },
+    {
+        "_id": "616d35c9d19f468e47610a6a",
+        "index": 4,
+        "picture": "https://i.ibb.co/TrCyn4p/receipt-1.jpg",
+        "name": "Doctor Receipt",
+        "description": "The medical bill receipt is one that a doctor's office or other medical institution will issue following the payment of an invoice. "
+    },
+    {
+        "_id": "616d35c9a38e778bbf5ed9d2",
+        "index": 5,
+        "picture": "https://i.ibb.co/TwjwD43/pharmacy-store.jpg",
+        "name": "Pharmacy Store",
+        "description": "Retail and clinical pharmacists both help patients get the medications they need and provide important guidance on medication usage and interactions"
+    }
+]
