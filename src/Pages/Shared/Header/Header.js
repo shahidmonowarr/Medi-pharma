@@ -8,7 +8,7 @@ const Header = () => {
         <>
             <Navbar bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="#home">MediPharma</Navbar.Brand>
+                    <Navbar.Brand className="fs-3 fw-bold" href="#home">MediPharma</Navbar.Brand>
                     <Nav className="ms-auto">
                         <Nav.Link as={HashLink} to="/home#home">Home</Nav.Link>
                         <Nav.Link as={HashLink} to="/home#services">Services</Nav.Link>
