@@ -1,4 +1,4 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, createUserWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, signOut, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { useEffect, useState } from "react";
 import initializeAuthentication from "../Pages/Login/Firebase/firebase.init";
 
@@ -30,7 +30,27 @@ const useFirebase = () => {
             setIsLoading(false);
         });
         return () => unsubscribed;
-    }, [])
+    }, []);
+
+    const createUserAccount = (email, password) => {
+
+        createUserWithEmailAndPassword(auth, email, password)
+            .then(result => {
+                setUser(user);
+            })
+            .catch(error => {
+                console.log(error.message);
+            })
+    }
+
+    const userLogin = (email, password) => {
+        // console.log(email, password);
+        signInWithEmailAndPassword(auth, email, password)
+            .then(result => {
+                setUser(user);
+                console.log(user);
+            })
+    }
 
     const logOut = () => {
         setIsLoading(true);
@@ -41,6 +61,8 @@ const useFirebase = () => {
 
     return {
         user,
+        createUserAccount,
+        userLogin,
         signInUsingGoogle,
         isLoading,
         logOut
