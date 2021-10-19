@@ -1,11 +1,15 @@
 import React from 'react';
-import { Carousel } from 'react-bootstrap';
+import { Button, Carousel } from 'react-bootstrap';
+import Banner from '../Banner/Banner';
 import Services from '../Services/Services';
+import './Home.css'
 
 const Home = () => {
     return (
-        <div>
-            <Carousel>
+        <div className="container">
+            <Banner></Banner>
+            <Services></Services>
+            {/* <Carousel>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
@@ -41,8 +45,8 @@ const Home = () => {
                         <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
-            </Carousel>
-            <Services></Services>
+            </Carousel> */}
+
         </div>
     );
 };
