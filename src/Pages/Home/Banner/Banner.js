@@ -1,16 +1,20 @@
 import './Banner.css'
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return (
         <div>
             <div className="test-section ">
                 <br />
-                <h2 className="test-section-title">Take Our Free Language Test</h2>
-                <p className="test-details">This quick and free online test will tell your language level <br />
+                <h2 className="section-title pt-5">A Better Way For Medicine</h2>
+                <p className="card-title">Best services available for the best customers<br />
                     and help choose the best group course.</p>
-                <Button variant="info fw-bold fs-5 my-3 p-3 text-white">Shop Now</Button>
+
+                <Link to='/doctors'>
+                    <Button variant="info fw-bold fs-5 my-3 p-3 text-white">Take a Look</Button>
+                </Link>
             </div>
         </div>
     );

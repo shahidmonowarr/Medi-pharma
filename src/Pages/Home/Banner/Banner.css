@@ -1,5 +1,13 @@
 .test-section{
     height: 500px;
     width: 100%;
-    background-image: url(../../../images/banner/medicine-bottles-tablets-wooden-.jpg);
+    background-image: url("https://i.ibb.co/d68yt6k/healthcare-background-with-medical-symbols-in-hexagonal-frame.jpg");
+}
+
+.section-title{
+ padding: 20px;
+    font-size: 60px;
+    font-weight: 700;
+    font-family: sans-serif;
+    color: #001f3f;
 }

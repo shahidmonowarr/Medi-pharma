@@ -1,0 +1,23 @@
+[
+    {
+        "_id": "1",
+        "index": 0,
+        "picture": "https://i.ibb.co/2Zf2frg/truth-concept-arrangement-with-magnifier.jpg",
+        "name": "Honesty & Transparency",
+        "description": "When one is honest, it means they're truthful, trustworthy, sincere, loyal and fair. Honesty is one of the most important attributes in life"
+    },
+    {
+        "_id": "2",
+        "index": 1,
+        "picture": "https://i.ibb.co/9wpy8gF/offer.jpg",
+        "name": "Extra Discount",
+        "description": "Discount pricing is one type of pricing strategy where you mark down the prices of your merchandise. The goal of a discount pricing strategy is to increase customer traffic,"
+    },
+    {
+        "_id": "3",
+        "index": 2,
+        "picture": "https://i.ibb.co/t2QjVdb/support.jpg",
+        "name": "24/7 Support",
+        "description": "customers can get help and find answers to questions as soon as they come up—24/7 and in real-time"
+    }
+]

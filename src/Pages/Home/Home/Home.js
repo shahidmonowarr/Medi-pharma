@@ -3,49 +3,53 @@ import { Button, Carousel } from 'react-bootstrap';
 import Banner from '../Banner/Banner';
 import Services from '../Services/Services';
 import './Home.css'
+import carousel1 from '../../../images/carousel/carocel1.jpg';
+import carousel2 from '../../../images/carousel/carocel2.jpg';
+import carousel3 from '../../../images/carousel/carocel3.jpg';
 
 const Home = () => {
     return (
-        <div className="container">
+        <div className="container" id="home">
             <Banner></Banner>
             <Services></Services>
-            {/* <Carousel>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="holder.js/800x400?text=First slide&bg=373940"
-                        alt="First slide"
-                    />
-                    <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="holder.js/800x400?text=Second slide&bg=282c34"
-                        alt="Second slide"
-                    />
+            <div className="mb-5">
+                <h2 className="section-title">Blog Archives</h2>
+                <Carousel>
 
-                    <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="holder.js/800x400?text=Third slide&bg=20232a"
-                        alt="Third slide"
-                    />
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={carousel1}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+                            <h3 className="card-title">Vision and eye health in children</h3>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={carousel2}
+                            alt="Second slide"
+                        />
 
-                    <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel> */}
+                        <Carousel.Caption>
+                            <h3 className="card-title">Haematopoietic stem cell transplant in children</h3>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={carousel3}
+                            alt="Third slide"
+                        />
+
+                        <Carousel.Caption>
+                            <h3 className="card-title">Children and their families require more help with medicines</h3>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                </Carousel>
+            </div>
 
         </div>
     );

@@ -17,6 +17,7 @@ const Header = () => {
                         <Nav className="ms-auto text-light">
                             <Nav.Link as={HashLink} to="/home#home">Home</Nav.Link>
                             <Nav.Link as={HashLink} to="/home#services">Services</Nav.Link>
+                            <Nav.Link as={Link} to="/doctors">Doctors</Nav.Link>
                             <Nav.Link as={HashLink} to="/about">About Us</Nav.Link>
                             {user?.email ?
                                 <Button onClick={logOut} variant="light" className="mx-3">Logout</Button>
