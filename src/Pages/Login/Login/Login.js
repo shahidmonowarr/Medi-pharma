@@ -27,7 +27,7 @@ const Login = () => {
         createUserAccount(name, email, password);
     }
     const handleLogin = () => {
-        userLogin(name, email, password);
+        userLogin(email, password);
     }
     return (
         <div className="container">
