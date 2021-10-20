@@ -8,7 +8,7 @@ const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    const { signInUsingGoogle, createUserAccount, userLogin } = useAuth();
+    const { signInUsingGoogle, createUserAccount, userLogin, error } = useAuth();
 
     const handleEmailChange = e => {
         setEmail(e.target.value);
@@ -42,25 +42,27 @@ const Login = () => {
                                     <input onBlur={handlePasswordChange} type="password" className="form-control" id="inputPassword3" required />
                                 </div>
                             </div>
+                            <p className="text-danger">{error}</p>
                             <button onClick={handleRegistration} type="button" className="btn btn-primary">Register</button>
                             <p>Already have an account? <span onClick={() => setIsTrue(true)}>click here</span></p>
                         </div>
                     ) : (
                         <div>
-                            <h2>Please Login</h2>
-                            <div className="row mb-3">
+                            <h2 className="fs-2 fw-bold text-success py-3">Please Login</h2>
+                            <div className="row mb-3 px-5">
                                 <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Email</label>
                                 <div className="col-sm-10">
                                     <input onChange={handleEmailChange} type="email" className="form-control" id="inputEmail3" required />
                                 </div>
                             </div>
-                            <div className="row mb-3">
+                            <div className="row mb-3 px-5">
                                 <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Password</label>
                                 <div className="col-sm-10">
                                     <input onBlur={handlePasswordChange} type="password" className="form-control" id="inputPassword3" required />
                                 </div>
                             </div>
-                            <button onClick={handleLogin} type="button" className="btn btn-primary">Login</button>
+                            <p className="text-danger">{error}</p>
+                            <button onClick={handleLogin} type="button" className="btn btn-warning text-white fw-bold">Login</button>
                             <p>Don't have an Account? <span onClick={() => setIsTrue(false)}>click here</span></p>
                         </div>
                     )
@@ -71,8 +73,8 @@ const Login = () => {
 
 
             <div>
-                <h2>Please Log in with</h2>
-                <br />
+                <h5 className="fst-italic fw-bold fs-4 text-primary my-3">Or</h5>
+                <h2 className="fs-2 fw-bold text-success py-3">Please Log In With</h2>
                 <button onClick={signInUsingGoogle} className="btn btn-warning mb-3 text-white fw-bold"><i class="fab fa-google text-danger"></i>oogle Sign In</button>
             </div>
         </div>
