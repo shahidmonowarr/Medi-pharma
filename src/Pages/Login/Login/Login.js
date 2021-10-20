@@ -6,22 +6,28 @@ const Login = () => {
     const [isTrue, setIsTrue] = useState(false);
 
     const [email, setEmail] = useState('');
+    const [name, setName] = useState('');
     const [password, setPassword] = useState('');
 
     const { signInUsingGoogle, createUserAccount, userLogin, error } = useAuth();
 
+    const handleNameChange = e => {
+        setName(e.target.value);
+    }
+
     const handleEmailChange = e => {
         setEmail(e.target.value);
     }
+
     const handlePasswordChange = e => {
         setPassword(e.target.value);
     }
     // const auth = getAuth();
     const handleRegistration = () => {
-        createUserAccount(email, password);
+        createUserAccount(name, email, password);
     }
     const handleLogin = () => {
-        userLogin(email, password);
+        userLogin(name, email, password);
     }
     return (
         <div className="container">
@@ -30,6 +36,12 @@ const Login = () => {
                     !isTrue ? (
                         <div>
                             <h2>Please Register</h2>
+                            <div className="row mb-3">
+                                <label htmlFor="inputName3" className="col-sm-2 col-form-label">Name</label>
+                                <div className="col-sm-10">
+                                    <input onChange={handleNameChange} type="name" className="form-control" id="inputName3" required />
+                                </div>
+                            </div>
                             <div className="row mb-3">
                                 <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Email</label>
                                 <div className="col-sm-10">
