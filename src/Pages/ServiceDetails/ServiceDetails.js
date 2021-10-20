@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import { Button } from 'react-bootstrap';
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 
 const ServiceDetails = () => {
     let { serviceId } = useParams();
@@ -23,7 +25,6 @@ const ServiceDetails = () => {
 
     return (
         <div className="container">
-            {/* <h2>this is details {serviceId}</h2> */}
             <div className="card mb-3" >
                 <div className="row g-0">
                     <div className="col-md-4">
@@ -31,8 +32,11 @@ const ServiceDetails = () => {
                     </div>
                     <div className="col-md-8">
                         <div className="card-body">
-                            <h5 className="card-title">{matchedDetail?.name}</h5>
+                            <h3 className="card-title pb-3 fs-1 text-success fw-bold">{matchedDetail?.name}</h3>
                             <p className="card-text">{matchedDetail?.description}</p>
+                            <Link to='/home'>
+                                <Button variant="success fw-bold fs-5 my-3 p-3 text-white">Go back Home</Button>
+                            </Link>
                         </div>
                     </div>
                 </div>

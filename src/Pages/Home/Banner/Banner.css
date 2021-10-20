@@ -1,13 +1,26 @@
 .test-section{
     height: 500px;
     width: 100%;
+    margin-bottom: 10px;
     background-image: url("https://i.ibb.co/d68yt6k/healthcare-background-with-medical-symbols-in-hexagonal-frame.jpg");
 }
+.banner-title{
+    padding: 50px 20px 20px;
+       font-size: 60px;
+       font-weight: 700;
+       font-family: sans-serif;
+       color: #133b61;
+}
+.banner-detail{
+    font-size: 20px;
+    font-weight: 500;
+    color: mistyrose;
+    padding: 20px;
+}
 
-.section-title{
- padding: 20px;
-    font-size: 60px;
-    font-weight: 700;
-    font-family: sans-serif;
-    color: #001f3f;
+@media only screen and (max-width: 600px) {
+.banner-title{
+    padding: 10px;
+    font-size: 40px;
+}
 }

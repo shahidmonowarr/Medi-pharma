@@ -1,0 +1,19 @@
+.section-title{
+    padding: 20px;
+       font-size: 60px;
+       font-weight: 700;
+       font-family: sans-serif;
+       color: #001f3f;
+   }
+   .carousel-title{
+       color: rgb(7, 87, 7);
+       font-family:monospace;
+       font-weight: 600;
+       font-size: 30px;
+   }
+
+   @media only screen and (max-width: 600px){
+       .carousel-title{
+           font-size: 15px;
+       }
+   }

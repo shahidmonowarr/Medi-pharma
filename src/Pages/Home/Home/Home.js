@@ -1,11 +1,12 @@
 import React from 'react';
-import { Button, Carousel } from 'react-bootstrap';
+import { Accordion, Button, Card, Carousel } from 'react-bootstrap';
 import Banner from '../Banner/Banner';
 import Services from '../Services/Services';
-import './Home.css'
+import './Home.css';
 import carousel1 from '../../../images/carousel/carocel1.jpg';
 import carousel2 from '../../../images/carousel/carocel2.jpg';
 import carousel3 from '../../../images/carousel/carocel3.jpg';
+import allTest from '../../../images/alltest.jpg';
 
 const Home = () => {
     return (
@@ -13,7 +14,7 @@ const Home = () => {
             <Banner></Banner>
             <Services></Services>
             <div className="mb-5">
-                <h2 className="section-title">Blog Archives</h2>
+                <h2 className="section-title" >Blog Archives</h2>
                 <Carousel>
 
                     <Carousel.Item>
@@ -23,7 +24,7 @@ const Home = () => {
                             alt="First slide"
                         />
                         <Carousel.Caption>
-                            <h3 className="card-title">Vision and eye health in children</h3>
+                            <h3 className="carousel-title">Vision and eye health in children</h3>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -34,7 +35,7 @@ const Home = () => {
                         />
 
                         <Carousel.Caption>
-                            <h3 className="card-title">Haematopoietic stem cell transplant in children</h3>
+                            <h3 className="carousel-title">Haematopoietic stem cell transplant in children</h3>
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
@@ -45,11 +46,22 @@ const Home = () => {
                         />
 
                         <Carousel.Caption>
-                            <h3 className="card-title">Children and their families require more help with medicines</h3>
+                            <h3 className="carousel-title">Children and their families require more help with medicines</h3>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
             </div>
+            {/* <div>
+                <div className="row">
+                    <div className="col=md-6">
+                        <img className="img-fluid w-75" src={allTest} alt="" />
+                    </div>
+                    <div className="col=md-6">
+                        <div>
+                        </div>
+                    </div>
+                </div>
+            </div> */}
 
         </div>
     );

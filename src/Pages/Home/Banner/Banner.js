@@ -8,8 +8,8 @@ const Banner = () => {
         <div>
             <div className="test-section ">
                 <br />
-                <h2 className="section-title pt-5">A Better Way For Medicine</h2>
-                <p className="card-title">Best services available for the best customers<br />
+                <h2 className="banner-title ">A Better Way For Medicine</h2>
+                <p className="banner-detail">Best services available for the best customers<br />
                     and help choose the best group course.</p>
 
                 <Link to='/doctors'>
