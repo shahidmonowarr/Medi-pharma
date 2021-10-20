@@ -5,6 +5,9 @@
        font-family: sans-serif;
        color: #001f3f;
    }
+   .questions{
+       text-align: start;
+   }
    .carousel-title{
        color: rgb(7, 87, 7);
        font-family:monospace;

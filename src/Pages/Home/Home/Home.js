@@ -63,15 +63,18 @@ const Home = () => {
                         <img className="img-fluid rounded-3 " src={allTest} alt="" />
                     </div>
                     <div className="col-md-6">
-                        <div>
+                        <div >
                             <h2 className="text-success pt-2"><FontAwesomeIcon icon={faCreativeCommonsRemix} /> Most common asked questions</h2>
-                            <h2 ><i class="fas fa-angle-double-down"></i></h2>
-                            <h4><i class="fas fa-check-circle"></i> What is this medication designed to do to me?</h4>
-                            <h4><i class="fas fa-check-circle"></i> Who should or should not be using this drug?</h4>
-                            <h4><i class="fas fa-check-circle"></i> How will my use of this medication be monitored?</h4>
-                            <h4><i class="fas fa-check-circle"></i> What is this medication designed to do to me?</h4>
-                            <h4><i class="fas fa-check-circle"></i> Why should I need to take vaccine?</h4>
-                            <h4 className="pb-3 fw-bold text-success"><FontAwesomeIcon icon={faSkype} /> If You have the same questions to asked. Please join to our support session</h4>
+                            <h2 ><i class="fas fa-angle-double-down text-danger"></i></h2>
+                            <div className="questions pb-2">
+
+                                <h4><i class="fas fa-check-circle text-primary"></i> What is this medication designed to do to me?</h4>
+                                <h4><i class="fas fa-check-circle text-primary"></i> Who should or should not be using this drug?</h4>
+                                <h4><i class="fas fa-check-circle text-primary"></i> How will my use of this medication be monitored?</h4>
+                                <h4><i class="fas fa-check-circle text-primary"></i> What is this medication designed to do to me?</h4>
+                                <h4><i class="fas fa-check-circle text-primary"></i> Why should I need to take vaccine?</h4>
+                            </div>
+                            <h4 className="pb-3 fw-bold text-success "><FontAwesomeIcon icon={faSkype} /> If You have the same questions to asked. Please join to our support session</h4>
 
                             <Button variant="success fw-bold my-1 p-2 text-white">Click Here</Button>
 

@@ -73,7 +73,7 @@ const Login = () => {
             <div>
                 <h2>Please Log in with</h2>
                 <br />
-                <button onClick={signInUsingGoogle} className="btn btn-warning">Google Sign In</button>
+                <button onClick={signInUsingGoogle} className="btn btn-warning mb-3 text-white fw-bold"><i class="fab fa-google text-danger"></i>oogle Sign In</button>
             </div>
         </div>
     );
