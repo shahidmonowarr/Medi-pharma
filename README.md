@@ -3,7 +3,7 @@
 This project was hosting with [Medi-Pharma](https://medipharma-health-care.web.app/).
 
 ## About Projects:
-### 1.This project is all about a health releted online sites.
+### 1.This website is a responsive Pharmacy related website.
 ### 2.In this project we include, HTML, CSS, Bootstrap, ReactBootstrap, React, Firebase authentication, API
 ### 3.People can find their medicine, vaccine, medical consultation, and doctor receipt from this website.  
 ### 4.In this project, I added a firebase email password and google login authentication.
